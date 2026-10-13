@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danielle Julian | Art Direction & Concept Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #080808;
+            --text-main: #e0e0e0;
+            --text-muted: #888888;
+            --accent-red: #8b0000;
+            --card-bg: #121212;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Cinzel', serif;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        header {
+            text-align: center;
+            padding: 8rem 2rem 4rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+        }
+
+        header h2 {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: var(--accent-red);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 2rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem 6rem;
+        }
+
+        .project {
+            background-color: var(--card-bg);
+            border: 1px solid #222;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 4rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(139, 0, 0, 0.1);
+            border-color: #333;
+        }
+
+        .project-content {
+            padding: 3rem;
+        }
+
+        .project-content h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .project-content p {
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .tag-container {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: rgba(139, 0, 0, 0.2);
+            color: #ff6b6b;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            padding: 0 3rem 3rem;
+        }
+
+        .project-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            filter: brightness(0.8) contrast(1.1);
+            transition: filter 0.3s ease;
+            display: block;
+        }
+
+        .project-gallery img:hover {
+            filter: brightness(1) contrast(1.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 4rem 2rem;
+            border-top: 1px solid #222;
+            color: var(--text-muted);
+        }
+
+        footer a {
+            color: var(--accent-red);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ff6b6b;
+        }
+
+        @media (min-width: 900px) {
+            .project.featured {
+                grid-template-columns: 1fr 1fr;
+            }
+            .project.featured .project-gallery {
+                padding: 3rem 3rem 3rem 0;
+                grid-template-columns: 1fr;
+                align-content: center;
+            }
+            .project.featured:nth-child(even) .project-gallery {
+                padding: 3rem 0 3rem 3rem;
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Danielle Julian</h1>
+        <h2>Art Director • UX/UI Designer</h2>
+        <p>Designing interactive systems and executing AI-assisted art direction for narrative-driven horror. Available for studio roles and creative direction starting December 2026.</p>
+    </header>
+
+    <div class="container">
+
+        <!-- The Last Birthday -->
+        <article class="project featured">
+            <div class="project-content">
+                <h3>The Last Birthday (1983)</h3>
+                <p>A mascot-horror concept utilizing intensive art direction to build 1980s commercial aesthetics. This project highlights promotional visual design, featuring a highly detailed cinematic poster of the protagonist attempting to evade the primary antagonist, Mr. Morrow[span_0](start_span)[span_0](end_span). The aesthetic relies heavily on physical decay and environmental tension[span_1](start_span)[span_1](end_span).</p>
+                <div class="tag-container">
+                    <span class="tag">Art Direction</span>
+                    <span class="tag">Visual Compositing</span>
+                </div>
+            </div>
+            <div class="project-gallery">
+                <img src="1000050458.png" alt="The Last Birthday Promotional Poster">
+                <img src="1000050660.png" alt="Mr. Morrow Mascot Teaser">
+            </div>
+        </article>
+
+        <!-- The Hollow Line -->
+        <article class="project featured">
+            <div class="project-content">
+                <h3>The Hollow Line</h3>
+                <p>An interactive narrative concept utilizing a tactile, diegetic user interface. The player assumes the role of a switchboard operator who must isolate extensions and route live calls while an "Unknown Caller" overloads the line[span_2](start_span)[span_2](end_span). The UI seamlessly integrates gameplay mechanics with direct environmental threats[span_3](start_span)[span_3](end_span).</p>
+                <div class="tag-container">
+                    <span class="tag">UI/UX Design</span>
+                    <span class="tag">Diegetic Interfaces</span>
+                </div>
+            </div>
+            <div class="project-gallery">
+                <img src="1000050833.png" alt="Switchboard Operator Interface">
+                <img src="1000050832.png" alt="The Hollow Line Jump Scare">
+            </div>
+        </article>
+
+        <!-- He Knows You're Home -->
+        <article class="project">
+            <div class="project-content">
+                <h3>He Knows You're Home (1985)</h3>
+                <p>A suburban survival horror concept driven by integrated player choice menus and heads-up displays. The interface includes personalized player inputs, timed dialogue responses over a landline, and a grounded inventory system containing keys, photos, and cassette tapes[span_4](start_span)[span_4](end_span).</p>
+                <div class="tag-container">
+                    <span class="tag">System Design</span>
+                    <span class="tag">Interaction States</span>
+                </div>
+            </div>
+            <div class="project-gallery">
+                <img src="1000050820.png" alt="Suburban Horror UI and Interactions">
+            </div>
+        </article>
+
+        <!-- Friday, October 19, 1990 -->
+        <article class="project">
+            <div class="project-content">
+                <h3>Friday, October 19, 1990</h3>
+                <p>A cinematic choice-based thriller focusing on rapid decision-making. The user interface forces the player to weigh consequence-heavy actions, such as whether to unlock the door for a stranded character or hold their breath to avoid detection by an unseen threat[span_5](start_span)[span_5](end_span).</p>
+                <div class="tag-container">
+                    <span class="tag">Branching Narrative</span>
+                    <span class="tag">HUD Design</span>
+                </div>
+            </div>
+            <div class="project-gallery">
+                <img src="1000050810.png" alt="Interactive Choice Interfaces">
+            </div>
+        </article>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Danielle Julian. Designed and built for the interactive web.</p>
+        <p><a href="mailto:daniellejulian1011@gmail.com">daniellejulian1011@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
